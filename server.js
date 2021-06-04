@@ -1,7 +1,6 @@
 const express = require('express')
 const hbs = require('express-handlebars')
 const routes = require('./routes.js')
-const fs = require('fs')
 
 const server = express()
 
