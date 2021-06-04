@@ -1,0 +1,22 @@
+{
+    "toDo": [
+        {
+            "name": "take rubbish out",
+            "description": "I need to take the rubbish out on sunday and the recycling out on wednesday" 
+        }, 
+        {
+            "name": "Finish EDA course",
+            "description": "I need to follow my wellness plan and complete the course to the best of my ability"
+        }
+    ],
+    "shopping": [
+        {
+            "item": "bin bags",
+            "quantity": 3
+        },
+        {
+            "item": "hand soap",
+            "quantity": 2
+        }
+    ]
+}
