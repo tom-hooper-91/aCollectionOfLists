@@ -4,9 +4,10 @@ const router = express.Router()
 const fs = require('fs')
 
 router.get('', (req, res) => {
-    fs.readFile(__dirname + '/data.json', (err,data) => {
+    fs.readFile(__dirname + '/data.json', (err, data) => {
         if (err) throw err
-        res.render('home', data)
+        const viewData = JSON.parse(data)
+        res.render('home', viewData)
     })
 })
 
