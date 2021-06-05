@@ -15,14 +15,6 @@ router.get('/:id', (req, res) => {
     lib.getList(id, (viewData) => {
         res.render('list', viewData)
     })
-
-    // const id = Number(req.params.id)
-    // lib.getPuppyById(id, (err, puppyDetails) => {
-    //   if (err) {
-    //     return res.status(500).send(err.message)
-    //   }
-    //   res.render('edit', puppyDetails)
-    // })
   })
 
 module.exports = router

@@ -1,0 +1,11 @@
+{{#each contents}}
+<ul>
+    <li>{{this.name}}<br> 
+        {{#if this.quantity}}
+        <em>{{this.quantity}}</em>
+        {{/if}}
+        {{#if this.description}}
+        <em>{{this.description}}</em>
+        {{/if}}</li>
+</ul>
+{{/each}}

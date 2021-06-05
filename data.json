@@ -2,7 +2,7 @@
     "list" : [
         {
             "id": 1,
-            "name": "toDo",
+            "name": "To-Do",
             "contents": [
                 {
                     "id": 1,
@@ -18,16 +18,16 @@
         },
         {
             "id": 1,
-            "name": "shopping",
+            "name": "Shopping",
             "contents": [
                 {
                     "id": 1, 
-                    "item": "bin bags",
+                    "name": "bin bags",
                     "quantity": 5
                 },
                 {
                     "id": 2,
-                    "item": "paper towels",
+                    "name": "paper towels",
                     "quantity": 8
                 }
             ]

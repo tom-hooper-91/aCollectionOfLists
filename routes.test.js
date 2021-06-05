@@ -21,18 +21,34 @@ test('/ renders correctly', (done) => {
     })
   })
 
-  test('/toDo renders correctly', (done) => {
-    expect.assertions(2)
-    const expected = 'LIST'
+  test('/To-Do renders correctly', (done) => {
+    expect.assertions(3)
+    const expected = 'To-Do'
 
     request(server)
-    .get('/toDo')
+    .get('/To-Do')
     .end((err, response) => {
       expect(err).toBeNull()
       const actual = response.text
+      const $ = cheerio.load(actual)
       expect(actual).toContain(expected)
+      expect($('li').text()).toMatch('rubbish out on sunday ')
       done()
     })
+  })
 
-
+    test('/Shopping renders correctly', (done) => {
+      expect.assertions(3)
+      const expected = 'Shopping'
+  
+      request(server)
+      .get('/Shopping')
+      .end((err, response) => {
+        expect(err).toBeNull()
+        const actual = response.text
+        const $ = cheerio.load(actual)
+        expect($('li').text()).toMatch('bin bags')
+        expect(actual).toContain(expected)
+        done()
+      })
   })
