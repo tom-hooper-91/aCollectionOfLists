@@ -1,11 +1,16 @@
+<div class="row">
+    <div class="col-md-12">
+        <ul>
 {{#each contents}}
-<ul>
-    <li>{{this.name}}<br> 
-        {{#if this.quantity}}
-        <em>{{this.quantity}}</em>
-        {{/if}}
-        {{#if this.description}}
-        <em>{{this.description}}</em>
-        {{/if}}</li>
-</ul>
+            <li>{{name}}<br> 
+                {{#if quantity}}
+                <em>{{quantity}}</em>
+                {{/if}}
+                {{#if description}}
+                <em>{{description}}</em>
+                {{/if}}</li>
 {{/each}}
+        </ul>
+        <a href='/{{name}}/edit'><button>Edit item</button></a>
+    </div>
+</div>

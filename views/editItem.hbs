@@ -1,0 +1,38 @@
+{{> title}}
+{{> homeLink}}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Edit {{name}} contents</h1>
+        <ul>
+            {{#each contents}}
+            <li><a href="./{{id}}">{{name}}</a></li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+{{!-- <div class="row">
+    <div class="col-md-12">
+        <form class="form" action="/{{id}}" method="post">
+        <label for="name" class="form-item">
+            Name:
+            <input type="text" name="name" value="{{name}}">
+        </label>
+        
+        <label for="breed" class="form-item">
+            Breed:
+            <input type="text" name="breed" value="{{breed}}">
+        </label>
+        
+        <label for="owner" class="form-item">
+            Owner:
+            <input type="text" name="owner" value="{{owner}}">
+        </label>
+        
+        <input type="hidden" name="image" value="{{image}}">
+        
+        <input type="submit" name="" value="Submit">
+        </form>
+    </div>
+</div> --}}
+

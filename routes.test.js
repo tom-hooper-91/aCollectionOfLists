@@ -52,3 +52,21 @@ test('/ renders correctly', (done) => {
         done()
       })
   })
+
+  test('/Shopping/edit renders correctly', (done) => {
+    expect.assertions(3)
+    const expected = 'contents'
+
+    request(server)
+    .get('/Shopping/edit')
+    .end((err, response) => {
+      expect(err).toBeNull()
+      const actual = response.text
+      const $ = cheerio.load(actual)
+      expect($('li').text()).toMatch('bin bags')
+      expect(actual).toContain(expected)
+      done()
+    })
+  })
+
+  
