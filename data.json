@@ -1,26 +1,36 @@
 {
-    "toDo": [
+    "list" : [
         {
             "id": 1,
-            "name": "take rubbish out",
-            "description": "I need to take the rubbish out on sunday and the recycling out on wednesday" 
-        }, 
-        {
-            "id": 2,
-            "name": "Finish EDA course",
-            "description": "I need to follow my wellness plan and complete the course to the best of my ability"
-        }
-    ],
-    "shopping": [
-        {
-            "id": 1,
-            "item": "bin bags",
-            "quantity": 3
+            "name": "toDo",
+            "contents": [
+                {
+                    "id": 1,
+                    "name": "take rubbish out",
+                    "description": "I need to take the rubbish out on sunday and recycling on wednesday"
+                },
+                {
+                    "id": 2,
+                    "name": "complete course",
+                    "description": "I need to follow my wellness plan and complete the EDA course to the best of my ability"
+                }
+            ]
         },
         {
-            "id":2,
-            "item": "hand soap",
-            "quantity": 2
+            "id": 1,
+            "name": "shopping",
+            "contents": [
+                {
+                    "id": 1, 
+                    "item": "bin bags",
+                    "quantity": 5
+                },
+                {
+                    "id": 2,
+                    "item": "paper towels",
+                    "quantity": 8
+                }
+            ]
         }
     ]
 }
