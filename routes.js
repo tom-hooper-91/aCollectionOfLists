@@ -19,7 +19,6 @@ router.get('/:id', (req, res) => {
 
 router.get('/:id/edit', (req, res) => {
     const id = req.params.id
-    // const item = req.params.item
     lib.getList(id, (viewData) => {
         res.render('editItem', viewData)
     })
@@ -29,7 +28,7 @@ router.get('/:id/:item', (req, res) => {
     const id = req.params.id
     const item = req.params.item
     lib.getList(id, (viewData) => {
-        res.render('editItem', viewData.contents.item)
+        res.render('Item', viewData.contents[item - 1])
     })
 })
 
