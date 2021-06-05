@@ -2,7 +2,7 @@
     "list" : [
         {
             "id": 1,
-            "name": "To-Do",
+            "name": "to-do",
             "contents": [
                 {
                     "id": 1,
@@ -17,8 +17,8 @@
             ]
         },
         {
-            "id": 1,
-            "name": "Shopping",
+            "id": 2,
+            "name": "shopping",
             "contents": [
                 {
                     "id": 1, 

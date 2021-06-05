@@ -17,7 +17,15 @@ function getList(name, callback) {
     })
 }
 
+function writeRedirect(path, string, newPath, callback) {
+  fs.writeFile(__dirname + path, string, (err) => {
+    if (err) throw err
+    callback (newPath)
+  })
+}
+
 module.exports = {
     readParse,
-    getList
+    getList,
+    writeRedirect
 }
