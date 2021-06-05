@@ -8,6 +8,16 @@ function readParse(path, callback) {
   })
 }
 
+function getList(name, callback) {
+    fs.readFile(__dirname + '/data.json', 'utf-8', (err, data) => {
+        if (err) return res.status(500).send(err.message)
+        const viewData = JSON.parse(data)
+        const list = viewData.list.find(element => element.name === name)
+        callback(list)
+    })
+}
+
 module.exports = {
-    readParse
+    readParse,
+    getList
 }
